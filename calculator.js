@@ -7,15 +7,14 @@ var questions = [{
     name: 'evaluate',
     type: 'input',
     message: 'Equation:',
-    // validate: function (equation) {
-    //   var regex = /^([-+/*]\d+)*/;
-
-    //   if (equation.length < 2) {
-    //     return true;
-    //   } else {
-    //     return 'Please enter valid equation.';
-    //   }
-    // },
+    validate: function (equation) {
+      var regex = /[a-z]/;
+      if(regex.test(equation)) {
+        return 'Please enter valid equation.';
+      } else {
+        return true;
+      }
+    },
     filter: function(equation) {
       try {
         var result = eval(equation.toString());
