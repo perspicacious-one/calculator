@@ -1,0 +1,18 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "bin": {
+    "calculator": "./calculator.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nelson Craig",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^6.0.0"
+  }
+}
